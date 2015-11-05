@@ -1,27 +1,40 @@
 @import 'theme.css';
 @import 'jupyter.min.css';
 
+/* There's too much space between a paragraph and an unordered
+   list below it */
+ul.simple {
+    margin-top: -1em;
+}
+
+/* Make background where the logo goes white */
 .wy-side-nav-search {
     background-color: #ffffff;
 }
 
+/* Make the version text in the logo area not-white */
 .wy-side-nav-search > div.version {
     color: rgba(0, 0, 0, 0.74);
 }
 
+/* Wrap lines in a table instead of forcing a horizontal
+   scrollbar */
 .wy-table-responsive table td {
     white-space: normal;
 }
 
+/* Force floating figures to only a certain width */
 .rst-content .align-right {
     width: 300px;
 }
 
+/* Figure captions shouldn't be bold nor tiny */
 .rst-content p.caption {
     font-size: 100%;
     font-weight: unset;
 }
 
+/* Space out ordered list a little. Might not need this */
 .rst-content .section ol li {
     margin-bottom: 0.3em;
 }
